@@ -4,7 +4,11 @@ const app = express();
 const PORT = 4000 || process.env.PORT;
 
 app.get("/", (req, res) => {
-  res.status(200).send("<em>Hello world! We are Learning Code Online</em>");
+  res
+    .status(200)
+    .send(
+      "<em>Hello world! We are Learning Code Online.</em> <br> And my name is Aum Radia"
+    );
 });
 
 app.get("/api/v1/instagram", (req, res) => {
